@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Advanced Linux Commands</title>
+		<title>Quantum Computing Workshop</title>
 
-		<meta name="description" content="GNU/Linux workshop">
-		<meta name="author" content="FOSSCell, NITC">
+	<meta name="description" content="QC workshop">
+		<meta name="author" content="Sims">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -41,157 +41,35 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Advanced Linux Commands</h1>
-
-
-					<p><font color=grey>By Prabhav Adhikari</font></p>
-
+					<h2><font color="yellow">History of Quantum Computing</font></h2>
+					<p><img src = "images/QC.jpeg" alt="QC"></a></p>
 				</section>
 
 				<section>
-					<section>
-						<h2>alias</h2>
-						<ul>
-							<li>Launch any command or group of commands by entering a pre-set string</li>
-							<li>Allows a user to create simple names or abbreviations for commands</li>
-
-						</ul>
-
-					</section>
-					<section>
-						<h2>Basic Syntax</h2>
-						<br><p><font color=red>alias <font color=orange>&lt;String&gt; </font>= <font color=orange>&lt;Command&gt;</font></font></p>
-						</p><br>
-						<h3>Examples</h3>
-						<p><font color=green>alias p = <font color=orange>"pwd" </font></font></p>
-					</section>
-
-					<section>
-						<h2>Alias</h2>
-						<br>
-						<p>An alias can be created with the same name as the core name of a command</p>
-						<br>
-						<p>An alias named ls could be created for the command ls -al</p>
-						<br>
-						<p><font color=green>alias ls= <font color=orange>"ls -al"</font></font></font></p>
-					</section>
-
-					<section>
-						<h2>Alias</h2>
-						<br>
-						<p>Multiple commands can be included in the same alias</p>
-						<br>
-						<p>Insert them within the same pair of quotation marks and Separate them with semicolons</p>
-						<br>
-						<p><font color=green>alias pl = <font color=orange>'pwd; ls'</font></font></font></p>
-					</section>
-
-					<section>
-						<h2>Alias</h2>
-						<br>
-						<p>Aliases can even be created to call other aliases</p>
-
-						<p><font color=green>alias l=<font color=orange>'ls -a'</font></font></p>
-						<p><font color=green>alias pl=<font color=orange>'p; l'</font></font></p>
-						<br>
-						<p>Aliases can be used with any argument that the command can be used with</p>
-
-
-						<p><font color=green>l <font color=orange>/home/Documents</font></font></p>
-					</section>
-
-					<section>
-						<h3>Alias</h3>
-						<p>Any alias set up with it remains in effect only during the current login session</p>
-						<p>Type <font color=green>alias</font> only to see a list of aliases.</p>
-						<p>Use <font color=green>unalias</font> <font color=orange><i>alias-name</i></font> to remove an alias</p>
-
-					</section>
-
-
+					<p><font color="yellow">The Quantum Timeline</font></p>
+					<p><img src = "images/history.jpg" alt="QC" height=90% width=90%></a></p>
 				</section>
 
 				<section>
-					<section>
-						<h2>bc</h2>
-						<p><font color='grey'><b>A basic Calculator</b></font>
-						</p
-						<br><br>
-						<p>In the bc environment type expressions and get their results</p>
-						<p><font color=green>5*5+3*23</font></p>
-						<p>Use <font color=orange>last</font> to use last answer in your expression.
-						<p></font> <font color=orange><i>last</i></font> * 2 - 1</p>
-					</section>
-				</section>
-<!--
-				PIPE
--->
-
-				<section>
-					<section>
-						<h2>I/O Redirection</h2>
-						<h4>Pipe</h4>
-						<p>Symbol used to provide output of one command as input to another command</p>
-
-						<h4>&gt;</h4>
-						<p>Used to direct the output to a file.</p>
-						<h4>&gt;&gt;</h4>
-						<p> Used to append the output to a file</p>
-					</section>
-				</section>
-
-				<!-- GREP>< -->
-				<section>
-					<section>
-						<h2>grep</h2>
-<!--
-						<ul>
-							<li>Used to search text for patterns specified by the user</li>
-							<li>Allows a user to create simple names or abbreviations for commands</li>
-
-						</ul>
-
--->
-						<p>Used to search text for patterns specified by the user</p>
-						<p>Basic Syntax:</p>
-						<p></p><font color=green>grep </font> <font color=orange>&lt;pattern&gt;  &lt;file&gt;</font></p>
-						<p>To see the occurances of 'is' in a file 'Intro.txt':<br>
-							<font color=green>grep </font> <font color=orange>'is'  Intro.txt</font> </p>
-					</section>
+					<p><font color="yellow">The Computing Timeline</font><p>
+					<p><img src = "images/comp.png" alt="QC" height=55% width=57%></a></p>
 				</section>
 
 				<section>
-				<h2>ping</h2>
-				<p>Used to check if an address is accessible</p>
-				<p>Syntax: <font color=green>ping </font> <font color=orange>&lt;destination&gt;</font></p>
-				<p>ping transmits packets to the address and checks if it is received</p>
-				<p>To restrict number of packets use <font color=green>ping -c &lt;no&gt; </font></p>
-				<p>Example <font color=green>ping </font> -c  5 <font color=orange>google.com</font></p>
+					<p><font color="yellow">Convergence</font></p>
+					<p><img src = "images/converge.jpg" alt="QC"></a></p>
+				</section>
+
+				<section>
+					<p><font color="yellow">The Quantum Computing Timeline</font></p>
+					<p><img src = "images/history.png" alt="QC"></a></p>
 				</section>
 
 
 				<section>
-				<h2>ps</h2>
-				<p>Used to provide information about the currently running processes including their process identification numbers (PIDs)</p>
-				<p>Syntax: <font color=green>ps</font> </p>
+					<a href="index.html#/1">let's dive into the timeline</a>
 				</section>
-				<section>
-				<h2>kill</h2>
-				<p>Used to kill a process.</p>
-				<p>Syntax: <font color=green>kill &lt;pid&gt;</font> </p>
-				</section>
-				<section>
-					<h2>tty</h2>
-					<p><font color='grey'><b>TeleTYpewriter</b></font></p>
-					<p>There are 6 virtual consoles in Ubuntu</p>
-					<p>They can be accessed by the keyboard shortcuts</p>
-					<p><font color=green>Ctrl</font><font color=orange>  + </font><font color=green>Alt</font>
-					<font color=orange>+</font><font color=green> F1 - F7</font>
-					<p>tty 1 to 6 have text UI while 7th has Graphics UI.</p>
-				</section>
-				<section>
-					<a href="index.html#/1">let's go on</a>
-				</section>
+
 			</div>
 
 		</div>
